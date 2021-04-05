@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #30475e;
+    color: white;
+}
+
+
+.header__left {  /*This will allow our block level elements to be aligned horizontally instead of vertically*/
+    flex: 0.3; /*We want header left to take up 30% of the entire flex container*/
+    display: flex;
+    align-items: center;
+    margin-left: 20px
+}
+
+
+.header__left > .MuiSvgIcon-root {
+    margin-left: auto; 
+    margin-right: 30px; 
+}
+
+
+.header__search {
+    flex: 0.4; 
+    background-color: #344e68 ;
+    text-align: center;
+    display: flex; 
+    padding: 0 50px;
+    color: gray;
+    border: 1px gray solid; 
+    border-radius: 6px; 
+ 
+}
+
+.header__search > input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    text-align: center;
+    min-width: 35px;
+}
+
+
+input[type=text]{
+    color: white;
+}
+
+.header__search > .MuiSvgIcon-root   {
+   margin-top:4px;
+}
+
+.header__right {
+    flex: 0.3; 
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__right > .MuiSvgIcon-root { /*This will grab the direct child of the header-right container that is a SvgIcon--In this case, our help icon*/
+    margin-left: auto; 
+    margin-right: 20px;
+}
